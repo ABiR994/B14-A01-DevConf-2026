@@ -2,20 +2,29 @@
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
     margin: auto;
     padding: 16px 24px;
-    align-items: center;
 }
 
-nav img {
+.nav-left, .nav-right {
+    flex: 1;
+    display: flex;
+}
+
+.nav-left img {
     height: 32px;
     display: block;
+}
+
+.nav-right {
+    justify-content: flex-end;
 }
 
 .navigation {
