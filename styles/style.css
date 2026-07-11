@@ -236,6 +236,11 @@ nav {
     margin-top: 24px;
 }
 
+.pricing-card button:hover {
+    background-color: #2f4bf5;
+    color: #ffffff;
+}
+
 .pricing-card-pro {
     background-color: #0a0f2b;
     border-color: #0a0f2b;
@@ -261,7 +266,17 @@ nav {
     border: none;
 }
 
+.pricing-card-pro button:hover {
+    background-color: #ffffff;
+    color: #2f4bf5;
+}
+
 .pricing-card-team button {
     color: #282828;
     border: 1px solid #282828;
+}
+
+.pricing-card-team button:hover {
+    background-color: #282828;
+    color: #ffffff;
 }
