@@ -8,7 +8,7 @@
 nav {
     display: flex;
     align-items: center;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: auto;
     padding: 16px 24px;
 }
@@ -92,7 +92,7 @@ nav {
 }
 
 .speakers {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: auto;
     padding: 80px 24px;
     text-align: center;
@@ -148,7 +148,7 @@ nav {
 
 
 .pricing {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: auto;
     padding: 80px 24px;
     text-align: center;
@@ -278,5 +278,84 @@ nav {
 
 .pricing-card-team button:hover {
     background-color: #282828;
+    color: #ffffff;
+}
+
+
+footer {
+    background-color: #0d1b2a;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 24px 0;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+}
+
+.footer-left img {
+    display: block;
+    height: 32px;
+}
+
+.footer-right {
+    justify-content: flex-end;
+}
+
+.social-media-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.social-media-links a {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.social-media-links a:hover {
+    color: #4a72ff;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #a0a8b8;
+    margin: 32px 24px 24px;
+}
+
+.footer-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px 32px;
+}
+
+.footer-container-2 p {
+    color: #a0a8b8;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: #a0a8b8;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
     color: #ffffff;
 }
