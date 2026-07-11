@@ -131,6 +131,7 @@ nav {
     font-weight: 600;
     letter-spacing: 0.5px;
     padding: 20px 20px 0;
+    text-transform: uppercase;
 }
 
 .speaker-card h3 {
@@ -143,4 +144,124 @@ nav {
     color: #6d6d6d;
     font-size: 14px;
     padding: 4px 20px 20px;
+}
+
+
+.pricing {
+    max-width: 1280px;
+    margin: auto;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pricing > p {
+    color: #6d6d6d;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 48px;
+}
+
+.pricing-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    text-align: left;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 32px 24px;
+}
+
+.pricing-tag {
+    color: #6d6d6d;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.no-of-people {
+    display: block;
+    color: #6d6d6d;
+    font-size: 13px;
+    margin-top: 4px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+}
+
+.pricing-card ul li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+.pricing-card ul li::before {
+    content: "•";
+    color: #2f4bf5;
+    position: absolute;
+    left: 0;
+}
+
+.pricing-card button {
+    background-color: #ffffff;
+    color: #2f4bf5;
+    border: 1px solid #2f4bf5;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.pricing-card-pro {
+    background-color: #0a0f2b;
+    border-color: #0a0f2b;
+}
+
+.pricing-card-pro .pricing-tag {
+    color: #90c1f7;
+}
+
+
+.pricing-card-pro .price, .pricing-card-pro ul li {
+    color: #ffffff;
+}
+
+.pricing-card-pro .no-of-people {
+    color: #a0a0b8;
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.pricing-card-pro button {
+    background-color: #2f4bf5;
+    color: #ffffff;
+    border: none;
+}
+
+.pricing-card-team button {
+    color: #282828;
+    border: 1px solid #282828;
 }
