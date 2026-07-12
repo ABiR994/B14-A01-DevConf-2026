@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/* Navigation Bar */
+
 nav {
     display: flex;
     align-items: center;
@@ -59,6 +61,8 @@ nav {
     background-color: #0019a9;
 }
 
+/* Banner */
+
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/banner.jpg');
     background-size: cover;
@@ -90,6 +94,8 @@ nav {
     font-size: 16px;
     margin: auto;
 }
+
+/* Speakers */
 
 .speakers {
     max-width: 1200px;
@@ -146,6 +152,7 @@ nav {
     padding: 4px 20px 20px;
 }
 
+/* Pricing */
 
 .pricing {
     max-width: 1200px;
@@ -281,6 +288,113 @@ nav {
     color: #ffffff;
 }
 
+/* Highlights (AI written)*/
+
+.highlights {
+    background-color: #0a0f2b;
+    padding: 80px 24px;
+}
+
+.highlights-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.highlights h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.highlights-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    color: #a0a8b8;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 64px auto;
+}
+
+.stat-band {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    margin-bottom: 80px;
+}
+
+.stat-item {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.stat-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2f4bf5;
+    margin: 0 0 8px 0;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #a0a8b8;
+    margin: 0;
+}
+
+.quote-band {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    gap: 24px;
+}
+
+.quote-item {
+    flex: 1 1 280px;
+    margin: 0;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-item p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    position: relative;
+    flex-grow: 1;
+}
+
+.quote-item p::before {
+    content: "\201C";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #2f4bf5;
+    display: block;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.quote-author {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    color: #a0a8b8;
+    margin-top: auto;
+    flex-grow: 0;
+}
+
+/* Footer */
 
 footer {
     background-color: #0d1b2a;
