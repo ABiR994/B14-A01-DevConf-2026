@@ -291,107 +291,164 @@ nav {
 /* Highlights (AI written)*/
 
 .highlights {
-    background-color: #0a0f2b;
+    background-color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+.highlights .container {
+    max-width: 1200px;
+    margin: auto;
     padding: 80px 24px;
 }
 
-.highlights-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .highlights h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffffff;
     text-align: center;
-    margin: 0 0 16px 0;
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px;
 }
 
 .highlights-subheading {
-    font-size: 16px;
-    font-weight: 400;
-    color: #a0a8b8;
     text-align: center;
-    max-width: 640px;
-    margin: 0 auto 64px auto;
+    color: #6d6d6d;
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 560px;
+    margin: 0 auto 64px;
 }
 
 .stat-band {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 40px;
     margin-bottom: 80px;
 }
 
-.stat-item {
-    flex: 1 1 200px;
-    text-align: center;
-    padding: 0 24px;
-}
-
-.stat-number {
-    font-size: 40px;
-    font-weight: 700;
-    color: #2f4bf5;
-    margin: 0 0 8px 0;
-}
-
-.stat-label {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #a0a8b8;
-    margin: 0;
-}
-
-.quote-band {
+.stat-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 40px;
-    gap: 24px;
+    margin: 0;
 }
 
-.quote-item {
-    flex: 1 1 280px;
-    margin: 0;
-    padding: 0 24px;
+.stat-item {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    border-left: 1px solid #e5e5e5;
 }
 
-.quote-item p {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    color: #ffffff;
-    line-height: 1.6;
-    margin: 0 0 16px 0;
-    position: relative;
-    flex-grow: 1;
+.stat-item:first-child {
+    border-left: none;
+    padding-left: 0;
 }
 
-.quote-item p::before {
-    content: "\201C";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
+.stat-item:last-child {
+    padding-right: 0;
+}
+
+.stat-item dt {
+    order: 1;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: #2f4bf5;
-    display: block;
-    line-height: 1;
     margin-bottom: 8px;
 }
 
-.quote-author {
-    font-size: 13px;
-    font-weight: 600;
-    font-style: normal;
-    color: #a0a8b8;
-    margin-top: auto;
-    flex-grow: 0;
+.stat-item dd {
+    order: 2;
+    margin: 0;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1;
+}
+
+.quotes {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quote-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 0;
+    max-width: 340px;
+    padding: 0 24px;
+    border-left: 1px solid #e5e5e5;
+    margin: 0;
+}
+
+.quote-item:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.quote-item:last-child {
+    padding-right: 0;
+}
+
+.quote-text {
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 24px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.quote-text::before {
+    content: "\201C";
+    position: absolute;
+    left: 0;
+    top: -0.1em;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #2f4bf5;
+}
+
+.quote-attribution {
+    color: #6d6d6d;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .stat-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .stat-item {
+        border-left: none;
+        padding: 0;
+    }
+
+    .quotes {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .quote-item {
+        border-left: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .highlights h2 {
+        font-size: 2rem;
+    }
+
+    .highlights .container {
+        padding: 56px 24px;
+    }
 }
 
 /* Footer */

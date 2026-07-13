@@ -32,3 +32,21 @@ RULES:
 - Quote band: 2-3 quotes arranged side-by-side below the stat band, with dividers between them, all attribution lines aligned to the same baseline regardless of quote length
 - Dark background for the whole section, consistent with my existing dark-featured-card and footer colors
 - Must stay visually consistent with the rest of my site (same font, spacing, and color values I already use elsewhere)
+
+
+5. Here are the actual design values from my existing CSS, so the Highlights section matches exactly instead of guessing:
+
+- Font-family: "Inter", sans-serif
+- Dark background used on my featured pricing card: #0a0f2b
+- Dark background used on my footer: #0d1b2a
+- Accent color used on dark backgrounds (labels): #90c1f7
+- Primary brand accent (buttons, bullets, links): #2f4bf5
+- Secondary text color on dark backgrounds: #a0a8b8
+- Section wrapper convention: max-width: 1200px; margin: auto; padding: 80px 24px;
+- Standard gap value used in grids/flex layouts: 24px
+- Border-radius: 8px on cards, 6px on buttons
+
+Please use these exact values when writing the CSS for the Highlights section so it's visually consistent with the rest of my site, not just similar.
+
+
+6. I would like to change the background color to white and subsequently refactor the whole color scheme of the section to match it.
